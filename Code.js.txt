@@ -1,0 +1,75 @@
+Explanation for each line of Code.js
+
+1-6.	Header which explains what the project is, the version, and the author.
+8.		Tells the interpreter that the program should be executed in strict mode.
+9.		Defines and initializes a global constant, PROMPT, while importing the readline-sync libary.
+11.		Defines and initializes the MAX_GRADE, MAX_MONTH, and MAX_CLASSROOM global constants.
+12.		Defines a global variable, continueResponse.
+13.		Defines three global variables, currentGrade, currentClassroom, and monthNum.
+20.		Signature of the main function of the program, also the dispatcher.
+21.		Call the setContinueResponse function.
+22.		While loop that runs until continueResponse is set to anything but 1. Curly brace which begin the while loop body.
+23.		Call function setMonthNum.
+24.		Call function setCurrentGrade.
+25.		Call function setCurrentClassroom.
+26.		Call function processPaymentCoupons.
+27.		Call function setContinueResponse.
+28.		Closing curly brace which end the while loop body.
+29.		For loop which runs MAX_CLASSROOM times. Curly brace which begins the for loop body.
+30.		Call function printGoodbye.
+31.		Curly brace which ends the for loop body.
+32.		Curly brace which ends the main function body.
+34.		Call the main function, the dispatcher function of the program.
+41.		Signature of the setContinueResponse function. The name of the function includes set meaning that it's a mutator function which initializes and sets the continueResponse global variable.
+42.		If loop which checks if continueResponse equals either 1 or 0. Curly braces which begin the if statement.
+43.		Set the continueResponse variable to user's input.
+44.		While loop which runs if continueResponse variable is not the correct value. Curly brace which begins the loop body.
+45.		Print out error message.
+46.		Set the continueResponse variable to user's input.
+47.		Curly brace which ends the loop body.
+48.		Curly brace which ends the if statement. An else statement and the curly brace which begins it's body.
+49.		Set continueResponse to 1.
+50.		Curly brace which ends the else statement's body.
+51.		Curly brace which ends the setContinueResponse function's body.
+58.		Signature of the setMonthNum function. Curly brace which begins the function's body.
+59.		An if statement which checks if monthNum is not initialized and less or equal to MAX_MONTH.
+60.		If the if statement is true increase monthNum by 1.
+62. 	If the if statement is false set monthNum to 1.
+64.		Curly brace which ends the function's body.
+71.		Signature for the setCurrentMonth function's body.
+73.		Define and set the currentMonth variable to an empty string.
+74-94.	A switch statement which sets the currentMonth variable to the string representation of the month number stored in the monthNum variable.
+95.		Print out the currentMonth variable as well as its type.
+96.		Return the currentMonth variable.
+97.		Curly brace which ends the function's body.
+104.	Signature for the setCurrentGrade function.
+105.	If statement which checks if currentGrade is not set and less or equal to MAX_GRADE.
+106.	If the if statement is true, increase currentGrade by 1.
+108.	If the if stetement is false, set currentGrade to 0.
+110.	Print out the currentGrade variable.
+111.	Curly brace which ends the function's body.
+118.	Signature for the setCurrentClassroom function.
+119.	If statement which checks if currentClassroom is not set and less or equal to MAX_CLASSROOM.
+120.	If the if statement is true, increase currentClassroom by 1.
+122.	If the if statement is false, set currentClassroom to 1.
+124.	Print out the currentClassroom variable.
+125.	Curly brace which ends the function's body.
+132.	Signature for the setUpperTuition function.
+133.	Define and initialize a local constant, BASE_TUITION. Setting it to 60.
+134.	Return the BASE_TUITION constant multiplied by the currentGrade.
+135.	Curly brace which ends the function's body.
+142.	Signature for the processPaymentCoupons function.
+143.	Define and initialize the KDG_TUITION constant. Setting it to 80.
+144.	While loop which runs if currentGrade is less or equal to MAX_GRADE.
+145.	While loop which runs if currentClassroom is less or equal to MAX_CLASSROOM.
+146.	While loop which runs if monthNum is less or equal to MAX_MONTH.
+146.	If statement which checks if currentGrade is 0.
+147.	If the if statement is true print out the tuition for kindergarden.
+148.	If the if stetement is false, call the setUpperTuition function and print it out.
+152.	Call the setMonthNum function.
+154.	Call the setCurrentClassroom function.
+155.	Call the setMonthNum function.
+157.	Call the setCurrentGrade function.
+158.	Call the setCurrentClassroom function.
+167.	Signature for the printGoodbye function.
+168.	Print out a goodbye message.
